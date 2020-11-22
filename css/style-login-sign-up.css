@@ -1,0 +1,113 @@
+.main {
+    background-color: #e0e0e0;
+
+    display: flex;
+
+    height: 100vh;
+
+    justify-content: center;
+    align-items    : center;
+
+    font-family: 'Quicksand', sans-serif;
+}
+
+.all-contain {
+    height : 700px;
+    display: flex;
+
+    border-radius: 20px;
+    background   : #e0e0e0;
+    box-shadow   : 5px 5px 11px #696969,
+        -5px -5px 11px #ffffff;
+}
+
+.main-contain {
+    display       : flex;
+    flex-direction: column;
+
+    justify-content: center;
+    text-align     : center;
+
+    border-top-left-radius   : 20px;
+    border-bottom-left-radius: 20px;
+    width                    : 400px;
+    padding                  : 30px;
+
+    background: #e0e0e0;
+}
+
+.main-contain>h2 {
+    font-weight: bold;
+}
+
+.main-contain>input {
+    width     : 100%;
+    padding   : 20px;
+    margin-top: 20px;
+
+    outline      : none;
+    border-style : none;
+    border-radius: 10px;
+    background   : #e0e0e0;
+    box-shadow   : inset 5px 5px 11px #696969,
+        inset -5px -5px 11px #ffffff;
+}
+
+.main-contain>input:focus {
+    outline: none;
+}
+
+.main-contain>button {
+    margin : 20px 100px;
+    padding: 10px 3px;
+
+    border-style : none;
+    border-radius: 10px;
+    background   : linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow   : 5px 5px 11px #696969,
+        -5px -5px 11px #ffffff;
+}
+
+.main-contain>button:focus {
+    outline: none;
+}
+
+#end {
+    font-size: 10px;
+}
+
+.password-check {
+    text-align: left;
+
+    padding: 10px;
+}
+
+.password-check>p {
+    margin: 0px;
+}
+
+.status {
+    display: none;
+
+    color: red;
+}
+
+.detail-contain {
+    display: flex;
+
+    justify-content: center;
+
+    width : 800px;
+    height: inherit;
+
+    border-top-right-radius   : 20px;
+    border-bottom-right-radius: 20px;
+
+    background-color: #90b4ce;
+}
+
+@media only screen and (max-width: 1200px) {
+    .detail-contain {
+        display: none;
+    }
+}
