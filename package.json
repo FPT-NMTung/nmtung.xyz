@@ -1,0 +1,22 @@
+{
+  "name": "nmtung.xyz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FPT-NMTung/nmtung.xyz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FPT-NMTung/nmtung.xyz/issues"
+  },
+  "homepage": "https://github.com/FPT-NMTung/nmtung.xyz#readme",
+  "dependencies": {
+    "vivid-icons": "^1.0.10"
+  }
+}

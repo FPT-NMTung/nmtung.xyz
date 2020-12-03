@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main-style.css">
+    <script src="/js/main-home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vivid-icons@1.0.10" type="text/javascript"></script>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -16,19 +18,349 @@
 </head>
 
 <body class="main">
-
     <header class="header">
-        <p>Logo</p>
-        <nav>
+        <nav class="nav-logo">
             <ul>
-                <li>qwe</li>
-                <li>ert</li>
-                <li>fgh</li>
-                <li>vbn</li>
+                <a href="/"><img src="/image/logo.svg" alt="logo" style="height: 80px;"></a>
             </ul>
         </nav>
-        <nav></nav>
+        <nav class="nav-internal-link">
+            <ul>
+                <li><a class="link-style" href="/">Home</a></li>
+                <li><a class="link-style" href="javascript:void(0)" onclick="move('feature')">Feature</a></li>
+                <li><a class="link-style" href="javascript:void(0)" onclick="move('premium')">Premium</a></li>
+                <li><a class="link-style" href="javascript:void(0)" onclick="move('contact')">Contact</a></li>
+                <li><a class="link-style" href="javascript:void(0)" onclick="move('support')">Support</a></li>
+            </ul>
+        </nav>
+        <nav class="nav-login-signup">
+            <ul>
+                <li><a class="button-style " href="/sign-up">Sign up</a></li>
+                <li><a class="link-style" href="/login">Login</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <!-- welcome section -->
+    <section class="main-section" id="welcome">
+        <div class="container test-div">
+            <div class="row">
+                <div class="col-xl-5 welcome-containt-summary">
+                    <h2><strong>Saving for the future</strong></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed pharetra quam. Morbi semper nulla
+                        vitae ligula scelerisque, eu facilisis ipsum commodo. Fusce et lectus lacus. Vivamus in
+                        porttitor diam.</p>
+                    <p><a class="button-style" href="javascript:void(0)">Try now</a></p>
+                </div>
+                <div class="col-xl-7 welcome-containt-image">
+                    <img src="image/welcome-image.png" alt="welcome-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- feature section -->
+    <section class="main-section" id="feature">
+        <div class="container test-div">
+            <div class="feature-contain-title">
+                <h2><strong>Feature</strong></h2>
+                <p>everythings you want, we have all</p>
+            </div>
+            <div class="feature-contain">
+                <div class="feature-contain-item">
+                    <div class="feature-contain-item-header">
+                        <div class="feature-contain-item-logo">
+                            <i data-vi="badge" data-vi-primary="#E2693D" data-vi-accent="#FECE2F"
+                                data-vi-prop="#CEFAFF"></i>
+                        </div>
+                        <p>được mọi người công nhận</p>
+                    </div>
+                </div>
+                <div class="feature-contain-item">
+                    <div class="feature-contain-item-header">
+                        <div class="feature-contain-item-logo">
+                            <i data-vi="calendar" data-vi-primary="#E2693D" data-vi-accent="#FECE2F"
+                                data-vi-prop="#CEFAFF"></i>
+                        </div>
+                        <p>dễ dàng lên dự tính cho tương lai</p>
+                    </div>
+                </div>
+                <div class="feature-contain-item">
+                    <div class="feature-contain-item-header">
+                        <div class="feature-contain-item-logo">
+                            <i data-vi="cloud" data-vi-primary="#E2693D" data-vi-accent="#FECE2F"
+                                data-vi-prop="#CEFAFF"></i>
+                        </div>
+                        <p>Luôn luôn được cập nhập thông tin</p>
+                    </div>
+                </div>
+                <div class="feature-contain-item">
+                    <div class="feature-contain-item-header">
+                        <div class="feature-contain-item-logo">
+                            <i data-vi="newspaper" data-vi-primary="#E2693D" data-vi-accent="#FECE2F"
+                                data-vi-prop="#CEFAFF"></i>
+                        </div>
+                        <p>Tạo được mục tiết kiệm cho tương lai</p>
+                    </div>
+                </div>
+                <div class="feature-contain-item">
+                    <div class="feature-contain-item-header">
+                        <div class="feature-contain-item-logo">
+                            <i data-vi="chat" data-vi-primary="#E2693D" data-vi-accent="#FECE2F"
+                                data-vi-prop="#CEFAFF"></i>
+                        </div>
+                        <p>Luôn nhận được sự hỗ trợ</p>
+                    </div>
+                </div>
+                <div class="feature-contain-item">
+                    <div class="feature-contain-item-header">
+                        <div class="feature-contain-item-logo">
+                            <i data-vi="graph-pie" data-vi-primary="#E2693D" data-vi-accent="#FECE2F"
+                                data-vi-prop="#CEFAFF"></i>
+                        </div>
+                        <p>Có biểu đồ thuận tiện</p>
+                    </div>
+                </div>
+                <div class="feature-contain-item">
+                    <div class="feature-contain-item-header">
+                        <div class="feature-contain-item-logo">
+                            <i data-vi="card" data-vi-primary="#E2693D" data-vi-accent="#FECE2F"
+                                data-vi-prop="#CEFAFF"></i>
+                        </div>
+                        <p>dễ dàng thanh toán với các loại thẻ</p>
+                    </div>
+                </div>
+                <div class="feature-contain-item">
+                    <div class="feature-contain-item-header">
+                        <div class="feature-contain-item-logo">
+                            <i data-vi="flag" data-vi-primary="#E2693D" data-vi-accent="#FECE2F"
+                                data-vi-prop="#CEFAFF"></i>
+                        </div>
+                        <p>Tạo những khoản chi quan trọng theo định kỳ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- premiun section -->
+    <section class="main-section" id="premium">
+        <div class="container test-div">
+            Ullamco minim deserunt ad pariatur non exercitation commodo nostrud sit ipsum. Voluptate occaecat nostrud
+            pariatur dolore sit duis veniam Lorem eu dolore proident ullamco officia deserunt. Aliqua in aute est cillum
+            Lorem labore in laborum.
+
+            Cillum occaecat proident irure nisi aute cillum excepteur amet aliquip. Voluptate deserunt tempor ipsum aute
+            esse. Voluptate voluptate amet mollit esse et commodo labore officia.
+
+            Duis ullamco nulla eu ad. Commodo tempor dolore velit ea. Veniam labore tempor duis Lorem cupidatat
+            adipisicing proident nulla cillum nisi.
+
+            Non enim sunt exercitation esse ipsum elit cupidatat sit incididunt reprehenderit. Nulla quis veniam
+            occaecat exercitation cillum deserunt sunt Lorem ex. Laboris nostrud irure aliqua incididunt cupidatat
+            nostrud consequat occaecat ad sunt esse aliqua amet. Id nisi anim in ut tempor enim officia mollit cillum do
+            irure aliqua.
+
+            Minim labore ex ad labore ex nostrud labore esse ad quis fugiat velit. Esse pariatur occaecat amet sit et ea
+            excepteur tempor enim ullamco adipisicing. Officia enim consectetur nostrud nostrud est excepteur ex veniam.
+            Sint ipsum velit laborum dolor. Incididunt exercitation minim enim cupidatat proident ad.
+
+            Pariatur elit id id pariatur aliqua eiusmod sit nisi minim ullamco officia tempor aliqua. Id ad fugiat
+            consequat pariatur dolore mollit voluptate cupidatat aliqua nisi. Ad irure adipisicing nisi in occaecat
+            occaecat veniam.
+
+            Sit eu in ex incididunt adipisicing velit est voluptate duis sint sunt elit. Deserunt nostrud ut do laborum.
+            Reprehenderit est enim commodo dolore Lorem enim fugiat eiusmod reprehenderit occaecat. Ipsum nulla sunt
+            deserunt consectetur magna reprehenderit tempor elit nisi quis do. Deserunt do quis anim officia labore
+            voluptate id non commodo mollit ex elit enim. Consequat deserunt veniam non proident deserunt enim quis
+            labore sint.
+
+            Ad ipsum incididunt Lorem anim proident. Occaecat irure tempor labore esse ipsum enim laborum duis amet
+            minim eiusmod. Aute eu velit ipsum enim dolore labore magna fugiat exercitation incididunt ullamco. Occaecat
+            occaecat aute eu magna fugiat ea. Incididunt amet nisi dolore dolore adipisicing.
+
+            Cupidatat consectetur adipisicing tempor eu labore et sunt sunt. Eiusmod sint aliquip labore minim duis.
+            Incididunt id aute esse duis nostrud sit in ullamco excepteur in laboris eiusmod.
+
+            Veniam ipsum eu minim dolor ea cupidatat occaecat Lorem exercitation. Sit do occaecat aliqua ea voluptate
+            proident qui. Esse reprehenderit labore enim qui.
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="main-section" id="contact">
+        <div class="container test-div">
+            Commodo qui ipsum excepteur duis. Eiusmod anim irure tempor enim est do quis laboris. Sunt nulla nostrud
+            sint cillum quis duis.
+
+            Eu ut non et consequat officia consectetur adipisicing proident do. Ut commodo aliquip laboris aliqua. Sunt
+            enim culpa anim culpa aliquip do non nisi proident do adipisicing. Ipsum id aliqua ipsum velit sint Lorem
+            ipsum esse cupidatat ex reprehenderit quis exercitation id. Laboris eiusmod tempor ipsum cillum ad aliqua
+            est consectetur irure eu nostrud quis ullamco. Id deserunt voluptate eiusmod anim sit velit officia.
+            Deserunt consequat nulla id aute laborum eiusmod aute sint fugiat est.
+
+            Excepteur do adipisicing labore est do incididunt. Aliquip amet non do excepteur fugiat. Fugiat laborum esse
+            minim ea anim laboris ipsum fugiat velit in. Deserunt quis velit amet consequat laborum dolore ipsum non
+            cupidatat.
+
+            Dolor occaecat pariatur ut proident magna deserunt aliqua excepteur. Sunt amet cupidatat quis culpa
+            cupidatat anim id ad. Exercitation amet nulla ipsum officia aute do ex do. Nisi anim non ex irure dolore
+            exercitation irure. Tempor cillum ut est aute sit. Cupidatat aliqua culpa eu ex ullamco consequat. Veniam
+            veniam labore dolor dolor eiusmod dolor.
+
+            Consequat enim ullamco Lorem sint in amet labore mollit fugiat. Laboris in ullamco aliqua aliquip veniam ea.
+            Pariatur quis duis qui proident amet pariatur excepteur occaecat est ipsum sit commodo magna. Tempor
+            voluptate commodo mollit esse eiusmod consequat ad irure sunt et. Dolor eiusmod sunt veniam deserunt Lorem
+            ullamco cupidatat nisi mollit.
+
+            Incididunt aliqua quis qui cillum. Officia quis sunt velit tempor laboris ad aute culpa cillum. Enim ipsum
+            aliquip id magna laboris enim adipisicing aute dolore excepteur pariatur. Ex fugiat sunt incididunt Lorem ut
+            nulla excepteur aliquip. Proident commodo velit consequat elit reprehenderit culpa.
+
+            In laboris et ad enim cillum eu esse. Laboris aute ex aute nostrud enim laborum enim ullamco cupidatat
+            deserunt. Minim cupidatat elit dolore nulla incididunt adipisicing dolor dolore. Et adipisicing sint veniam
+            enim irure ipsum non sunt duis. Ea aliquip et aute quis labore laboris culpa aute excepteur consequat.
+            Incididunt elit velit exercitation velit sint adipisicing veniam. Irure sint commodo exercitation fugiat
+            minim ut occaecat exercitation in cillum.
+
+            Enim sunt aliqua anim irure irure occaecat ad cupidatat laborum. In anim quis cupidatat officia aliqua.
+            Cupidatat quis consequat tempor id adipisicing laborum mollit veniam minim fugiat excepteur id nostrud. Sint
+            aute duis dolor quis culpa enim aliquip sunt eiusmod.
+
+            Do aliqua ipsum exercitation irure. Velit et ad mollit laboris consectetur eiusmod aliquip do dolore ad et.
+            Aliqua voluptate commodo incididunt qui. Pariatur cupidatat cillum veniam exercitation mollit consectetur
+            nulla velit consectetur eu cupidatat deserunt et. Irure pariatur nostrud adipisicing incididunt id quis est
+            consectetur tempor.
+
+            Et mollit adipisicing amet mollit sunt anim. Et et culpa ex labore sunt do elit excepteur. Laboris dolor
+            veniam magna Lorem laborum anim eiusmod voluptate. Est officia adipisicing exercitation esse reprehenderit
+            ullamco do consequat duis velit consectetur.
+        </div>
+    </section>
+
+    <!-- support section -->
+    <section class="main-section" id="support">
+        <div class="container test-div">
+            Et non mollit anim sit do cupidatat. Ea quis elit eu sint consectetur duis sit anim aliqua. Aliquip qui
+            magna laboris tempor do deserunt Lorem ea dolore reprehenderit tempor nostrud. Nostrud amet laborum ut
+            ullamco ut reprehenderit ullamco ex ea commodo laboris culpa culpa proident. Nisi tempor aliquip deserunt
+            officia laborum minim velit sunt sint consequat.
+
+            Adipisicing fugiat laborum magna ullamco culpa Lorem occaecat minim. Culpa aute ad anim consequat
+            exercitation pariatur nulla dolore est est incididunt aliqua exercitation eiusmod. Elit ad Lorem est aliqua
+            anim ea aliquip ut dolore excepteur aute. Anim esse qui esse ut aliquip duis et amet eiusmod ipsum proident.
+            Ex ipsum officia aliqua et culpa fugiat sunt ipsum incididunt cillum culpa aute ut do.
+
+            Magna ea nostrud id ut. Eiusmod minim commodo incididunt ipsum. Pariatur id eiusmod quis ea ut ut. Laborum
+            fugiat nulla laboris qui mollit eiusmod cupidatat est.
+
+            Incididunt commodo magna amet excepteur veniam ipsum. Dolore Lorem quis qui fugiat excepteur ipsum cillum.
+            Voluptate ipsum occaecat labore id nostrud anim exercitation laboris veniam ad aute.
+
+            Et elit commodo non pariatur est aliquip id excepteur ut est adipisicing esse. Cupidatat aliquip consectetur
+            culpa est tempor tempor amet magna eiusmod proident excepteur in. Quis excepteur est velit cupidatat duis
+            consequat voluptate ad consectetur velit. Ad dolor irure aute qui commodo sint.
+
+            Voluptate proident labore aliqua et do nulla consectetur ea ullamco. Qui non dolore laboris dolore aliquip
+            commodo duis exercitation. Ex eiusmod Lorem magna amet in do sunt proident voluptate laborum nisi officia
+            culpa. Qui magna in reprehenderit cupidatat aliquip nulla anim consequat magna. In do cillum do enim ex
+            tempor ut. Laboris dolore Lorem voluptate adipisicing nostrud.
+
+            Commodo tempor non reprehenderit commodo fugiat mollit aliquip ullamco sint. Officia magna eiusmod
+            exercitation officia. Excepteur id sint est dolore minim ea aliqua minim. Do consectetur voluptate
+            exercitation id voluptate magna. Labore elit ut culpa exercitation aliqua fugiat consequat incididunt in
+            elit. Culpa aliquip ex reprehenderit nulla sit ex ipsum anim est voluptate aliqua esse ad. Id quis consequat
+            consequat cillum dolore.
+
+            Incididunt magna sint non officia consectetur deserunt ullamco elit magna non dolor. Occaecat cupidatat
+            consequat aliquip labore id. Eu in ullamco deserunt elit fugiat laboris duis veniam. Deserunt labore aliqua
+            velit laboris et ullamco exercitation reprehenderit. Commodo dolor exercitation qui commodo magna laboris et
+            excepteur fugiat. Esse reprehenderit nulla eu magna laboris dolore sit occaecat sit magna mollit laborum
+            amet pariatur.
+
+            Laborum irure enim esse irure esse ea. Laborum sunt id duis mollit eiusmod ullamco velit dolore sit est
+            incididunt est. Ullamco dolore aliqua duis nostrud aliquip ea officia. Veniam pariatur aliqua magna magna id
+            officia ad. Cupidatat ullamco enim aliqua eu dolore aliquip cillum fugiat minim ex tempor ipsum mollit.
+
+            Cillum duis commodo dolor non incididunt laborum proident non. Anim voluptate do culpa nostrud reprehenderit
+            ut officia dolore. Quis consectetur cillum cupidatat occaecat labore pariatur cupidatat commodo labore
+            cillum sunt dolore. Quis elit voluptate veniam anim ad ut ut. Mollit officia velit consectetur aute qui
+            cillum officia culpa mollit.
+        </div>
+    </section>
+
+    <!-- nav control navigation -->
+    <nav class="arrow-top" id="arrow-top-id">
+        <a class="link-style" href="javascript:void(0)" onclick="move('welcome')">
+            <img src="https://img.icons8.com/color/48/000000/circled-up-2--v1.png" />
+        </a>
+    </nav>
+
+    <!-- external link to social network -->
+    <nav class="social-link">
+
+    </nav>
+
+    <!-- information in footer -->
+    <footer class="footer-style">
+        <div class="container footer-div">
+            <div class="row">
+                <div class="col-xl-4 contact-col">
+                    <img src="/image/logo.svg" alt="logo" style="height: 80px;">
+
+                    <h4 class="contact-title">About us</h4>
+                    <p>We want to help people who want to plan their own expenses.</p>
+
+                    <h4 class="contact-title">Contact us</h4>
+                    <div class="contact" id="contact-phone-number">
+                        <img src="https://img.icons8.com/ultraviolet/30/000000/phone.png" />
+                        <p><a class="link-style" href="tel:+84853576259">+84 85 3576259</a></p>
+                    </div>
+                    <div class="contact" id="contact-facebook">
+                        <img src="https://img.icons8.com/ultraviolet/30/000000/facebook-new.png" />
+                        <p><a class="link-style" href="https://www.facebook.com/NMTung.Socialnetwork/">Nguyen Manh
+                                Tung</a></p>
+                    </div>
+                    <div class="contact" id="contact-email">
+                        <img src="https://img.icons8.com/ultraviolet/30/000000/sent.png" />
+                        <p><a class="link-style" href="mailto:admin@nmtung.xyz">admin@nmtung.xyz</a></p>
+                    </div>
+                </div>
+                <div class="col-xl-2 contact-col">
+                    <h4 class="contact-title">Information</h4>
+
+                    <p><a class="link-style" href="javascript:void(0)">About us</a></p>
+                    <p><a class="link-style" href="javascript:void(0)">Blog</a></p>
+                    <p><a class="link-style" href="javascript:void(0)">Event</a></p>
+                    <p><a class="link-style" href="javascript:void(0)">Teams</a></p>
+                    <p><a class="link-style" href="javascript:void(0)">Premium</a></p>
+                </div>
+                <div class="col-xl-2 contact-col">
+                    <h4 class="contact-title">Helpful links</h4>
+
+                    <p><a class="link-style" href="javascript:void(0)">Service</a></p>
+                    <p><a class="link-style" href="javascript:void(0)">Supports</a></p>
+                    <p><a class="link-style" href="javascript:void(0)">Terms & Condition</a></p>
+                    <p><a class="link-style" href="javascript:void(0)">Privacy Policy</a></p>
+                </div>
+                <div class="col-xl-4 contact-col">
+                    <h4 class="contact-title">Subscribe more info</h4>
+                    <input type="email" placeholder="Enter your email">
+                    <button class="button-style">Subscribe</button>
+
+                    <h4 class="contact-title">Address</h4>
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1881.4865142878389!2d105.52618333961392!3d21.012781815968623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcfe6abd90d3f98f6!2zVG_DoCBuaMOgIEFscGhhIEZQVA!5e1!3m2!1svi!2s!4v1606540335256!5m2!1svi!2s"
+                        width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="true"
+                        aria-hidden="true" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="container copyright-div">
+            <hr>Copyrights © 2020 - 2021<br>All rights reserved by <a
+                href="https://www.facebook.com/NMTung.Socialnetwork/" target="_blank">EmilyBP</a></div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -41,6 +373,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="/js/temp.js"></script>
 </body>
 
 </html>
